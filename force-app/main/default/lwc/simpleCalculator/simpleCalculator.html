@@ -1,0 +1,21 @@
+<template>
+    <div class="slds-m-around_small">
+        <lightning-card title="Simple Calculator" icon-name="custom:custom64">
+            <lightning-input label="Enter Number 1 :"
+                value={num1}
+                name="num1"
+                onchange={handleChangeEvent}
+            ></lightning-input>
+
+            <lightning-input label="Enter Number 2 :"
+                value={num2}
+                name="num2"
+                onchange={handleChangeEvent}
+            ></lightning-input>
+            <br>
+            <br>
+            <lightning-button label="Sum" class="slds-m-around_small" onclick={doSum} variant="brand"></lightning-button>
+            <lightning-button label="Subs" class="slds-m-around_small" onclick={doSubs} variant="brand"></lightning-button>
+        </lightning-card>
+    </div>
+</template>
