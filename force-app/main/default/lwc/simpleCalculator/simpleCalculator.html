@@ -12,10 +12,21 @@
                 name="num2"
                 onchange={handleChangeEvent}
             ></lightning-input>
-            <br>
-            <br>
             <lightning-button label="Sum" class="slds-m-around_small" onclick={doSum} variant="brand"></lightning-button>
+            &nbsp;
             <lightning-button label="Subs" class="slds-m-around_small" onclick={doSubs} variant="brand"></lightning-button>
+            &nbsp;
+            <lightning-button label="Div" class="slds-m-around_small" onclick={doDiv} variant="brand"></lightning-button>
+            &nbsp;
+            <lightning-button label="Multiplication" class="slds-m-around_small" onclick={doMulti} variant="brand"></lightning-button>
         </lightning-card>
+    </div>
+    <div class="slds-m-around_small">
+        <template if:true={result}>
+            Result is : 
+            <lightning-formatted-number value={result} >
+
+            </lightning-formatted-number>
+        </template>
     </div>
 </template>

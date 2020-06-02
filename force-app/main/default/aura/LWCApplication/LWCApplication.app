@@ -1,3 +1,3 @@
 <aura:application extends="force:slds">
-    <c:simpleCalculator/>
+    <c:propertyDemo/>
 </aura:application>
