@@ -1,3 +1,3 @@
 <aura:application extends="force:slds">
-    <c:propertyDemo/>
+    <c:parentComp/>
 </aura:application>
